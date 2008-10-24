@@ -1,0 +1,7 @@
+
+For more information on sds-rest, see http://sds-rest.rubyforge.org
+
+NOTE: Change this information in PostInstall.txt 
+You can also delete it if you don't want it.
+
+
