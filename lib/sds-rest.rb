@@ -169,19 +169,18 @@ module SDSRest
     private
       #execute a request
       def execute_request(req)
-      #   http = Net::HTTP.new(get_url)
-      #   http.use_ssl = true
-      #   http.start {|http| 
-      #     response = http.request(req)
-      #     puts response
-      #     response
-      #   }
-      #   
+        http = Net::HTTP.new(get_url, 443)
+        #http.verify_mode = OpenSSL::SSL::VERIFY_NONE
         
-        
-        Net::HTTP.new(get_url).start {|http|
+        http.use_ssl = true
+        http.start {|http| 
           response = http.request(req)
-        }
+          response
+        }       
+        
+        #Net::HTTP.new(get_url).start {|http|
+        #  response = http.request(req)
+        #}
       end  
       
       #gets the base url to send the request to

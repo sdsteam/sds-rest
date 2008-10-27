@@ -14,8 +14,8 @@ require 'shoulda'
 # if you have not created an authority you can use the SSDS object to do so
 ENV['username'] = 'username'
 ENV['password'] = "password"
-ENV['url'] = "data.beta.mssds.com"
-ENV['authority'] = 'authority'
+ENV['url'] = "data.database.windows.net"
+ENV['authority'] = 'zrzjhb'
 
 def random(length=6)  
    chars = 'abcdefghjkmnpqrstuvwxyz'  

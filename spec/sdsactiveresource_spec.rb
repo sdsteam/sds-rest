@@ -15,7 +15,8 @@ class SDSSpec < Test::Unit::TestCase
       @service = SDSRest::Service.new
       @container = random
       @service.create_container @container
-      Car.site = 'http://infozerktest12.data.beta.mssds.com/' + @container + "/"
+      # enter your authority here
+      Car.site = 'http://zrzjhb.data.beta.mssds.com/' + @container + "/"
       Car.user = ENV['username']
       Car.password = ENV['password']
     end

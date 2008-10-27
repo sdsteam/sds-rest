@@ -12,7 +12,7 @@ class SDSSpec < Test::Unit::TestCase
       assert_respond_to @service, :create_authority
     end
     
-    should "be able to create an authority" do
+    should "be able to create an authority" do 
       results = @service.create_authority random
       assert_instance_of Net::HTTPCreated, results
     end

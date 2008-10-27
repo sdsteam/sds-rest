@@ -5,7 +5,10 @@ require File.dirname(__FILE__) + '/spec_helper'
 class SDSSpec < Test::Unit::TestCase
   context "An SDSActiveResource class" do
     setup do
-      @connection = SDSActiveResource::SDSConnection.new('http://infozerktest15.data.beta.mssds.com/infozerk')
+      @service = SDSRest::Service.new
+      @container = random
+      @service.create_container @container
+      @connection = SDSActiveResource::SDSConnection.new('http://zrzjhb.data.beta.mssds.com/' + @container)
     end
   
     should "respond to get_container" do
