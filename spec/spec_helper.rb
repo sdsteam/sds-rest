@@ -1,6 +1,8 @@
 RAILS_ROOT = ''
 RAILS_ENV = ''
 
+$:.reject! { |e| e.include? 'TextMate' }
+
 $LOAD_PATH << File.join(File.dirname(__FILE__), '..', 'lib')
 require 'sds-rest'
 require 'sds-activeresource'
@@ -10,10 +12,10 @@ require 'shoulda'
 
 # set your connection information for your SSDS account here.
 # if you have not created an authority you can use the SSDS object to do so
-ENV['username'] = 'javery'
-ENV['password'] = "YAnrZWh8a3y7vw9VfF8q"
+ENV['username'] = 'username'
+ENV['password'] = "password"
 ENV['url'] = "data.beta.mssds.com"
-ENV['authority'] = 'infozerktest12'
+ENV['authority'] = 'authority'
 
 def random(length=6)  
    chars = 'abcdefghjkmnpqrstuvwxyz'  

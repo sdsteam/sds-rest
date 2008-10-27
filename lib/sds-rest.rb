@@ -1,4 +1,5 @@
 require 'net/http'
+require 'net/https'
 require 'rexml/document'
 require 'yaml'
 
@@ -168,6 +169,16 @@ module SDSRest
     private
       #execute a request
       def execute_request(req)
+      #   http = Net::HTTP.new(get_url)
+      #   http.use_ssl = true
+      #   http.start {|http| 
+      #     response = http.request(req)
+      #     puts response
+      #     response
+      #   }
+      #   
+        
+        
         Net::HTTP.new(get_url).start {|http|
           response = http.request(req)
         }

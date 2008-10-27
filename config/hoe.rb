@@ -2,9 +2,9 @@ require 'sds-rest/version'
 
 AUTHOR = 'James Avery'  # can also be an array of Authors
 EMAIL = "javery@infozerk.com"
-DESCRIPTION = "description of gem"
+DESCRIPTION = "A ruby library for accessing the SDS Rest interface"
 GEM_NAME = 'sds-rest' # what ppl will type to install your gem
-RUBYFORGE_PROJECT = 'sds-rest' # The unix name for your project
+RUBYFORGE_PROJECT = 'sdsrest' # The unix name for your project
 HOMEPATH = "http://#{RUBYFORGE_PROJECT}.rubyforge.org"
 DOWNLOAD_PATH = "http://rubyforge.org/projects/#{RUBYFORGE_PROJECT}"
 EXTRA_DEPENDENCIES = [
