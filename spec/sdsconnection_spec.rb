@@ -8,7 +8,7 @@ class SDSSpec < Test::Unit::TestCase
       @service = SDSRest::Service.new
       @container = random
       @service.create_container @container
-      @connection = SDSActiveResource::SDSConnection.new('http://zrzjhb.data.beta.mssds.com/' + @container)
+      @connection = SDSActiveResource::SDSConnection.new('http://zrzjhb.data.database.windows.net/' + @container)
     end
   
     should "respond to get_container" do

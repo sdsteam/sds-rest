@@ -170,9 +170,10 @@ module SDSRest
       #execute a request
       def execute_request(req)
         http = Net::HTTP.new(get_url, 443)
-        #http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-        
         http.use_ssl = true
+        http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+        http.ca_file = File.join(File.dirname(__FILE__), "MSSA.pem")
+        
         http.start {|http| 
           response = http.request(req)
           response

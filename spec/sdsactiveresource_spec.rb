@@ -3,7 +3,6 @@ require 'net/http'
 require File.dirname(__FILE__) + '/spec_helper'
 
 class Car < SDSActiveResource::Base
-  #self.site = 'http://infozerktest15.data.beta.mssds.com/infozerk'
    
   
 end
@@ -16,7 +15,7 @@ class SDSSpec < Test::Unit::TestCase
       @container = random
       @service.create_container @container
       # enter your authority here
-      Car.site = 'http://zrzjhb.data.beta.mssds.com/' + @container + "/"
+      Car.site = 'https://zrzjhb.data.database.windows.net/' + @container + "/"
       Car.user = ENV['username']
       Car.password = ENV['password']
     end

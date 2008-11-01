@@ -12,7 +12,7 @@ require 'shoulda'
 
 # set your connection information for your SSDS account here.
 # if you have not created an authority you can use the SSDS object to do so
-ENV['username'] = 'username'
+ENV['username'] = 'dunnry5'
 ENV['password'] = "password"
 ENV['url'] = "data.database.windows.net"
 ENV['authority'] = 'zrzjhb'
