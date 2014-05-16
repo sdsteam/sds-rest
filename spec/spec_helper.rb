@@ -17,10 +17,10 @@ ENV['password'] = "password"
 ENV['url'] = "data.database.windows.net"
 ENV['authority'] = 'zrzjhb'
 
-def random(length=6)  
-   chars = 'abcdefghjkmnpqrstuvwxyz'  
-   randomstring = ''  
-   length.times { |i| randomstring << chars[rand(chars.length)] }  
-   randomstring  
+def random(length=6)
+   chars = 'abcdefghjkmnpqrstuvwxyz'
+   randomstring = ''
+   length.times { |i| randomstring << chars[rand(chars.length)] }
+   randomstring
  end
 
